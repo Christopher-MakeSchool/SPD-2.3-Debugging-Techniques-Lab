@@ -42,7 +42,7 @@
         <p>
             {% for topping in toppings %}
             <label>
-                <input type="checkbox" name="toppings" value="{{ topping.name }}">
+                <input type="checkbox" name="toppings" value="{{ topping.name }}" multiple>
                 {{ topping.value }}
             </label><br>
             {% endfor %}
