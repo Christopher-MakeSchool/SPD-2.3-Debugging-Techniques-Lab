@@ -15,11 +15,44 @@ _Then I noticed another bug ..._
 
 ## Exercise 1
 
-[[Your answer goes here!]]
+To debug this exercise, open a terminal `cmd + j` and navigate to the `exercise-1` folder, then run:
+
+```zsh
+$ pip3 install virtualenv
+$ virtualenv venv-ex1
+created virtual environment
+$ source venv-ex1/bin/activate
+(venv-ex1) ➜  exercise-1 git:(main) ✗ pip3 install -r requirements.txt
+```
+
+Then to run the server:
+
+```zsh
+python3 app.py
+```
 
 ## Exercise 2
 
-[[Your answer goes here!]]
+To debug this exercise, open a terminal `cmd + j` and navigate to the `exercise-2` folder, then run:
+
+```zsh
+$ pip3 install virtualenv
+$ virtualenv venv-ex2
+created virtual environment
+$ source venv-ex2/bin/activate
+(venv-ex2) ➜  exercise-2 git:(main) ✗ pip3 install -r requirements.txt
+```
+
+Then run the server and open the app.py file:
+
+```zsh
+python3 app.py
+```
+
+1. add a ```.env``` file to the ```exercise-2``` directory.
+2. Lines 39 & 40 requesting the city and units input from our form needs to be changed from ```users_ciy``` & ```requested_units``` to ```city``` & ```units``` respectively.
+3. Change the ```place``` param to ```q``` on Line 45.
+4. Change ```['main]['temperature']``` to ```['main]['temp']``` on line 54.
 
 ## Exercise 3
 
