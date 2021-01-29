@@ -56,4 +56,13 @@ python3 app.py
 
 ## Exercise 3
 
-[[Your answer goes here!]]
+To debug this exercise, open a terminal `cmd + j` and navigate to the `exercise-3` folder, then run:
+
+```zsh
+python3 main.py
+```
+
+Ran the program, notied ```main.py``` only makes calls to the helper functions in ```untils.py``` and then prints the outputs thus we will be focusing out efforts there. Next looking at the trace back we look for the lowest line number as this is most likely our culprit. Then we continue from there.
+
+1. ```Line 37``` in ```utils.py``` got an ```Index out of bounds error```, simply add ```-1```, makig the staement ```arr[k] = right_side[i-1]```
+2. The indicies of an array can't be a float, to solve this issue lets type cast our equaton on ```line 48``` from ```mid = (high + low) / 2``` to ```mid = int((high + low) / 2)```
